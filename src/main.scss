@@ -1,0 +1,1419 @@
+
+    *,
+    *::after,
+    *::before {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    
+    html {
+      font-size: 62.5%;
+      font-family: sans-serif;
+      @media only screen and (max-width: 75em) {
+       font-size: 50%;
+          }
+
+    }
+    
+    body {
+      font-size: 1.5rem;
+      color: black;
+      line-height: 1.4;
+      font-family: sans-serif;
+      
+    }
+
+
+    
+    .main {
+      font-size: 1.5rem;
+      color: black;
+      font-family: sans-serif;
+      font-weight: 500;
+overflow-x: hidden;
+     width: 100%;
+     &::-webkit-scrollbar {
+      display: none;
+    }
+    
+    }
+
+    
+
+
+    .section {
+      width: 100%;
+      height: fit-content;
+    
+    }
+
+
+
+    ////////////////////////////////////////////////////////////////////
+    //////////////////// first-section
+
+
+    .first-section {
+      width: 100vw;
+      height: 100vh;
+position: relative;
+
+@media only screen and (max-width: 43.75em) {
+            
+  height: 85vh;
+           }
+
+          
+      &__holder {
+        position: absolute;
+        top: 45%;
+       left: 50%;
+        transform: translate(-50% , -50%);
+        text-align: center;
+
+      }
+
+      &__h2 {
+font-size: 7rem;
+text-transform: uppercase;
+font-family: serif;
+font-weight: 700;
+color:black;
+
+@media only screen and (max-width: 43.75em) {
+            
+  font-size: 6rem;
+           }
+
+           @media only screen and (max-width: 31.25em) {
+            
+            font-size: 5rem;
+                     }
+                    
+                     
+      }
+
+      
+ &__video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+ opacity: .7;
+
+
+
+}
+
+&__video-holder {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+      &__p {
+        font-family: serif;
+        font-weight: 700;
+        color:  black;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    text-transform: capitalize;
+
+    @media only screen and (max-width: 43.75em) {
+            
+     font-size: 1.5rem;
+              }
+              @media only screen and (max-width: 31.25em) {
+                width: 70vw;
+                font-size: 1.25rem;
+                         }
+                         @media only screen and (max-width: 28.125em) {
+                    
+                          width: 70vw;
+                          
+                                   }
+
+      }
+
+      &__input {
+        margin-top: 1.5rem;
+      width: 50%;
+      padding: 1rem;
+      border: 1px solid grey;
+      border-radius: .5rem;
+      text-transform: capitalize;
+      outline: none;
+      @media only screen and (max-width: 31.25em) {
+            
+      width: 75%;
+                 }
+     
+      }
+
+      &__button {
+        height: 3rem;
+        border: none;
+        display: block;
+        margin-left: 43%;
+        width: 15%;
+        font-size: 1.7rem;
+        text-transform: capitalize;
+        transition: all .5s;
+        cursor: pointer;
+        margin-top: 1rem;
+        border-radius: .3rem;
+        &:hover {
+          transform: scale(1.08);
+          
+        }
+        @media only screen and (max-width: 31.25em) {
+            
+         width: 20%;
+         margin-left: 38%;
+                   }
+      }
+      
+      
+
+
+
+    }
+
+    //////////////////////////////////////////////////////////////////
+    ///////////////////////  second-section
+
+    .second-section {
+      height: 110vh;
+      width: 100vw;
+      background-image: linear-gradient(to right bottom, rgba(128, 128, 128, 0.103), rgba(128, 128, 128, 0.103)), 
+      url("../public/web-car/IMG_3240.JPG");
+
+      @media only screen and (max-width: 56.25em) {
+        
+       height: 90vh;
+       
+       
+          }
+          @media only screen and (max-width: 43.75em) {
+            
+          height: fit-content;
+                    
+                   }
+      
+     
+      &__holder {
+        width: 100%;
+        height: 100%;
+        padding: 5rem 5rem 5rem 5rem;
+        
+
+      }
+
+      &__h2 {
+text-align: center;
+font-size: 3.5rem;
+text-transform: capitalize;
+color: #fff;
+
+@media only screen and (max-width: 43.75em) {
+            
+  font-size: 3rem;
+          
+         }
+      }
+
+      &__p {
+text-align: center;
+font-size: 2rem;
+font-weight: 550;
+color: #fff;
+
+@media only screen and (max-width: 43.75em) {
+            
+  font-size: 1.5rem;
+          
+         }
+      }
+    
+      &__main {
+        padding-top: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 8rem;
+        grid-row-gap: 5rem;
+
+        @media only screen and (max-width: 43.75em) {
+            
+         display: grid;
+         grid-template-columns: 1fr;
+         justify-content: center;
+         align-items: center;
+         padding-left: 2.8rem;
+                 
+                }
+                @media only screen and (max-width: 31.25em) {
+            
+                  padding-left: .7rem;
+                           }
+      }
+
+      &__1 {
+width: 35vw;
+
+padding-bottom: .4rem;
+background-color: #fff;
+border: 1px solid grey;
+
+display: flex;
+box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15);
+
+@media only screen and (max-width: 43.75em) {
+            
+ width: 80vw;
+ margin-bottom: 2.5rem;
+          
+         }
+      }
+
+      &__1-icon-holder {
+        display: flex;
+       
+        justify-content: center;
+width: 15vw;
+
+@media only screen and (max-width: 31.25em) {
+            
+  width: 20vw;
+           }
+      }
+      &__1-icon{
+        font-size: 5rem;
+        color: rgba(128, 0, 128, 0.836);
+        @media only screen and (max-width: 31.25em) {
+            
+          font-size: 4rem;
+                   }
+      }
+      &__div{
+        
+      }
+      &__1-div-h2{
+        text-transform: capitalize;
+        @media only screen and (max-width: 31.25em) {
+            
+         font-size: 1.7rem;
+                   }
+      }
+      &__1-div-p{
+        margin-bottom: 1rem;
+        @media only screen and (max-width: 31.25em) {
+            
+          font-size: 1.3rem;
+                   }
+      }
+      &__button{
+width: fit-content;
+color: purple;
+font-size: 2rem;
+
+text-decoration: none;
+cursor: pointer;
+@media only screen and (max-width: 31.25em) {
+            
+  font-size: 1.6rem;
+           }
+
+      }
+
+    }
+
+
+    
+
+////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////
+////////////////////////// three-line
+
+
+.three-line {
+  width: 3.5rem;
+  height: .3rem;
+  background-color: #fff;
+  position: absolute;
+  top: 10%;
+  right: 8%;
+  cursor: pointer;
+  @media only screen and (max-width: 50em) {
+     right: 9%;
+    
+  }
+
+
+ 
+}
+
+
+
+
+
+
+.three-line::before {
+  content: "";
+ background-color: #fff;
+ width: 3.5rem;
+ height: .3rem;
+  position: absolute;
+  top: -.7rem;
+  left: .05rem;
+
+  @media only screen and (max-width: 43.75em) {
+    left: 0.027rem; 
+ }
+
+  
+ 
+  
+}
+
+.three-line::after {
+  content: "";
+ background-color: #fff;
+ width: 3.5rem;
+ height: .3rem;
+  top: .7rem;
+  position: absolute;
+  left: .05rem;
+  @media only screen and (max-width: 43.75em) {
+    left: 0.025rem; 
+ }
+                                                          
+                                                              
+
+
+}
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////// side-bar-edit
+
+
+.side-bar-edit {
+  position: fixed;
+    top: 0;
+    right: 0;
+    width: 0%;
+    font-size: 1.4rem;
+    font-weight: 600;
+    height: 100vh;
+    transform: translateX(31rem);
+    background-color: blue;
+    border-right: 1px solid black;
+  z-index: 7;
+}
+
+
+
+
+.side-bar {
+    position: fixed;
+    width: 22%;
+    z-index: 7;
+    top: 0;
+    right: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    height: 100vh;
+    background-color: red;
+    transition: all 1s;
+
+    @media only screen and (max-width: 50em) {
+        
+      width: 30%;
+         
+         }
+
+         @media only screen and (max-width: 43.75em) {
+        
+          width: 100%;
+             
+             }
+            
+        
+
+    
+    
+  &__holder{
+      
+      font-size: 1.4rem;
+      background-color: white;
+      height: 100vh;
+      padding: 2rem;
+      transition: all 2s;
+  }
+
+  &__ul{
+list-style: none;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 10rem;
+  }
+
+  &__li{
+font-size: 3rem;
+margin-bottom: 2rem;
+text-transform: capitalize;
+font-family: serif;
+
+&:hover {
+  color: rgba(32, 178, 171, 0.797);
+  cursor: pointer;
+}
+  }
+
+  &__icon-holder{
+    margin-top: 18rem;
+    margin-left: 3rem;
+      text-align: center;
+  }
+
+  &__icon {
+    font-size: 3rem;
+    margin-right: 2.5rem;
+    @media only screen and (max-width: 43.75em) {
+      font-size: 4.5rem;
+    }
+  }
+
+  
+
+
+
+}
+
+
+
+
+
+
+.three-line-edit {
+  width: 3rem;
+  height: .3rem;
+  background-color: black;
+  position: absolute;
+  top: 9%;
+  right: 81%;
+  transform: rotate(140deg);
+  transition: all 1s;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.three-line-edit::before {
+  content: "";
+ background-color: #000;
+ width: 4rem;
+ height: .3rem;
+  position: absolute;
+  top: -.8rem;
+  left: .05rem;
+  transform: rotate(138deg);
+  visibility: hidden;
+}
+
+.three-line-edit::after {
+  content: "";
+ background-color: #000;
+ width: 3rem;
+ height: .3rem;
+  top: .04rem;
+  position: absolute;
+  left: .05rem;
+  transform: rotate(-102deg);
+     
+
+
+
+}
+
+
+
+
+
+
+
+
+
+    /////////////////////////////////////////////////////////////////
+    ///////////////////// third-section
+
+    .third-section {
+      margin-top: 3rem;
+            height: 110vh;
+            width: 100vw;
+           text-align: center;
+            position: relative;
+           background-color:  rgba(128, 128, 128, 0.103) ; 
+           @media only screen and (max-width: 43.75em) {
+            
+          height: 90vh;
+                     }
+                     @media only screen and (max-width: 31.25em) {
+            
+                     height: 85vh;
+                               }
+
+      &__holder{
+     position: absolute;
+     top: 15%;
+     left: 19%;
+     transform: translate(-50% , -50%);
+
+     @media only screen and (max-width: 43.75em) {
+          top: 10rem;  
+      left: 15%;
+               }
+               @media only screen and (max-width: 31.25em) {
+            
+                left: 9%;
+                         }
+
+        
+      }
+      &__head {
+        font-size: 2.5rem;
+        text-transform: capitalize;
+        padding-top: 2rem;
+        @media only screen and (max-width: 43.75em) {
+            
+          font-size: 2rem;
+                   }
+      }
+      &__p {
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        letter-spacing: .75rem;
+
+        @media only screen and (max-width: 43.75em) {
+            
+          font-size: 1.3rem;
+          letter-spacing: normal;
+                   }
+      
+      }
+      &__main{
+       
+        width: 100%;
+        height: 100%;
+        
+      }
+      &__section{
+     
+      
+      }
+      &__sect-1{
+           margin-bottom: 2rem;
+           width: 65vw;
+           height: 50vh;
+           
+           display: flex;
+           padding: 0rem;
+          
+           align-items: center;
+           justify-content: center;
+
+           @media only screen and (max-width: 43.75em) {
+            
+            width: 70vw;
+
+                     }
+
+                     @media only screen and (max-width: 31.25em) {
+            
+                     width: 80vw;
+                     height: 40vh;
+                               }
+         
+      }
+      &__sect-2{
+        width: 60vw;
+        padding: 2rem;
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-column-gap: 2rem;
+    margin-left: 3.5rem;
+
+    @media only screen and (max-width: 43.75em) {
+            
+          width: 70vw;
+          margin-left: .5rem;
+               }
+               @media only screen and (max-width: 31.25em) {
+                 display: grid;
+                  
+             grid-template-columns: 1fr;
+               width: 80vw;
+                         }
+
+      }
+
+      &__ul{
+        list-style: none;
+      }
+      &__ul1{
+       list-style: none;
+      }
+      &__li{
+        list-style: none;
+        width: 100%;
+        text-align: start;
+        padding-top: 1rem;
+        height: 4rem;
+        background-color: darkgrey;
+        border: 1px solid white;
+        color: white;
+        font-weight: 550;
+        text-transform: capitalize;
+        font-size: 2rem;
+        padding-left: 1rem;
+        @media only screen and (max-width: 43.75em) {
+            
+          font-size: 1.5rem;
+                   }
+
+                   @media only screen and (max-width: 31.25em) {
+                   margin-bottom: .5rem;
+                   font-size: 1.3rem;
+                   
+                             }
+      }
+      &__li2{
+        width: 100%;
+        height: fit-content;
+        padding-top: 1rem;
+        text-align: start;
+        list-style: none;
+        background-color: darkgrey;
+        border: 1px solid white;
+        color: white;
+        font-weight: 550;
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        padding-left: 1rem;
+        @media only screen and (max-width: 43.75em) {
+            
+          font-size: 1.3rem;
+                   }
+
+                   @media only screen and (max-width: 31.25em) {
+            margin-bottom: .5rem;
+            padding-top: .5rem;
+                    font-size: 1.2rem;
+
+                             }
+      }
+     
+
+
+    }
+
+    
+article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.20);
+  width:fit-content;
+  border: 1px solid rgba(128, 128, 128, 0.596);
+  height: fit-content;
+  opacity: 0;
+  transition:  all 0.7s linear;
+  display: flex;
+  flex-direction: column;
+
+
+}
+article.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+article.lastSlide {
+  transform: translateX(-100%);
+}
+article.nextSlide {
+  transform: translateX(100%);
+}
+
+
+
+.person-img {
+  padding: 2rem;
+ border-radius: 1rem;
+  margin-bottom: 1rem;
+  width: 65vw;
+  height: 100%;
+  object-fit: cover;
+
+  @media only screen and (max-width: 43.75em) {
+            
+  width: 70vw;
+             }
+
+             @media only screen and (max-width: 31.25em) {
+            
+             width: 80vw;
+             height: 100%;
+                       }
+
+}
+article h4 {
+  text-transform: uppercase;
+  color: var(--clr-primary-5);
+  margin-bottom: 0.25rem;
+}
+.title {
+  text-transform: capitalize;
+  margin-bottom: 0.75rem;
+  color: var(--clr-grey-3);
+}
+.text {
+  max-width: 35em;
+  margin: 0 auto;
+  margin-top: 2rem;
+  line-height: 2;
+  color: var(--clr-grey-5);
+}
+.icon {
+  font-size: 3rem;
+  margin-top: 1rem;
+  color: var(--clr-primary-5);
+}
+/////////////////////////////////////////////////////////////////
+/////////////////////// fourth-section
+
+.fourth-section {
+  width: 100vw;
+  height: 100vh;
+  
+  background-image: linear-gradient(to right bottom, rgba(128, 128, 128, 0.103), rgba(128, 128, 128, 0.103)), 
+  url("../public/web-car/IMG_3236.JPG");
+
+  @media only screen and (max-width: 56.25em) {
+        
+    height: 70vh;
+    
+    
+       }
+
+       @media only screen and (max-width: 43.75em) {
+            
+       height: fit-content;
+                 }
+
+
+  &__holder {
+width: 100%;
+height: 100%;
+padding: 2rem;
+  }
+
+  &__h2{
+text-align: center;
+font-size: 2.5rem;
+text-transform: capitalize;
+  }
+
+  &__main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   align-items: center;
+margin-top: 2rem;
+    justify-items: center;
+
+    @media only screen and (max-width: 43.75em) {
+            
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+       
+
+               }
+               @media only screen and (max-width: 31.25em) {
+            
+                display: grid;
+                grid-template-columns: 1fr ;
+                 
+          
+                         }
+                        
+              
+  }
+  &__box{
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.20);
+    cursor: pointer;
+width: 28vw;
+background-color: white;
+ height: 26rem;
+ border: 1px solid rgba(128, 128, 128, 0.493);
+ margin-bottom: 2rem;
+ padding: 1rem;
+ transition: all .7s;
+ &:hover {
+   transform: scale(1.05);
+ }
+
+ @media only screen and (max-width: 43.75em) {
+            
+  width: 40vw;
+
+           }
+           @media only screen and (max-width: 31.25em) {
+          width: 80vw;
+             
+      
+                     }
+          
+                    
+    
+  }
+  &__box-1{
+    width: 100%;
+    border: 1px solid grey;
+    height: 15rem;
+
+  }
+  &__img{
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+  }
+  &__box-2{
+margin-top: 1rem;
+  }
+  &__p{
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 550;
+
+
+
+  }
+
+  &__{
+    
+  }
+  &__{
+    
+  }
+  &__{
+    
+  }
+  &__{
+    
+  }
+  &__{
+
+  }
+  &__{
+
+  }
+
+  &__{
+    
+  }
+  &__{
+    
+  }
+  &__{
+    
+  }
+  &__{
+    
+  }
+  &__{
+
+  }
+  &__{
+
+  }
+
+  &__{
+    
+  }
+  &__{
+    
+  }
+  &__{
+    
+  }
+  &__{
+    
+  }
+  &__{
+
+  }
+
+
+
+
+
+}
+
+
+  
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+
+.fifth {
+ 
+  padding: 15rem;
+background-color: rgba(128, 128, 128, 0.24);
+
+}
+.fifth-main {
+  background-image: linear-gradient( 105deg, rgba(255, 255, 255, 0.900) 0%,rgba(255, 255, 255, 0.900) 50%,
+   transparent 50%)  ,  url("../public/web-car/IMG_3241.JPG");
+  background-size: cover;
+  background-position: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.315);
+  position: relative;
+}
+.fifth-footer {
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+    background-color: grey;
+    transition: transform .5s;
+    text-transform: uppercase;
+    color: #f7f7f7;
+    font-size: 1.6rem;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.20);
+    border: none;
+
+    &:hover {
+      transform: translateY(-.2rem);
+      background-color: #fff;
+      color: grey ;
+    }
+}
+.form-radio {
+   margin-bottom: 3rem;
+}
+
+.form {
+  width: 50%;
+  padding: 5rem;
+}
+.main-head--3 {
+  margin-bottom: 4rem;
+  color: grey;
+
+  font-size: 1.6rem;
+}
+.form-input1 {
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.514);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 100%;
+  display: block;
+  position: relative;
+  transition: all .3s;
+}
+.form-main1:not(:last-child){
+  margin-bottom: 2rem;
+}
+.form-input1:focus {
+  outline: none;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.315);
+  border-bottom: 3px solid green;
+}
+.form-input1::-webkit-input-placeholder {
+  color: #999;
+}
+.form-input1:focus:invalid {
+  border-bottom: 3px solid #ff4f30; 
+}
+.label1 {
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  margin-top: .5rem;
+  display: block;
+  transition: all .3s ;
+}
+
+.form-input1:placeholder-shown  +  .label1 {
+  opacity: 0;
+  visibility: hidden;
+   transform: translateY(-4rem);
+}
+.form-radio1 { 
+  width: 49%;
+  display: inline-block;
+}
+.label2 {
+  font-size: 1.4rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 4rem;
+}
+.form-radio-button {
+ height: 3rem;
+ width: 3rem;
+ border-radius: 1.5rem;
+ border: 5px solid grey;
+ display: inline-block;
+ position: absolute;
+ top: -.7rem;
+ left: 0;
+}
+.form-radio-button::after {
+  content: "";
+  display: block;
+height: 1.2rem;
+width: 1.2rem;
+border-radius: .5rem;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate( -50% , -50%);
+background-color:grey ;
+opacity: 0;
+transition: opacity .3s;
+}
+.form-radio-input1:checked  + .label2 .form-radio-button::after {
+    opacity: 1;
+}
+.form-radio-input1 {
+  display: none;
+}
+
+
+
+
+
+    /////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////  footer
+
+    .footer {
+      height: 60vh;
+     width: 100vw;
+     background-color: rgba(0, 0, 0, 0.814);
+     color:#fff;
+     padding-top: 10rem;
+     padding-left: 0rem;
+     padding-right: 10rem;
+     padding-bottom: 10rem;
+     @media only screen and (max-width: 56.25em) {
+        
+     padding-right: 0rem;
+     padding-bottom: 0rem;
+     height: fit-content;
+           
+      }
+
+      @media only screen and (max-width: 31.25em) {
+            padding-bottom: 18rem;
+        
+               
+              }
+     
+    
+
+      &__holder{
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+
+        
+        @media only screen and (max-width: 43.75em) {
+        
+          display: block;
+          text-align: center;
+                
+           }
+
+
+
+
+      }
+      &__part1{
+        width: 15%;
+
+
+        @media only screen and (max-width: 43.75em) {   
+         width: 100%;         
+           }
+        
+
+
+
+      
+      }
+      &__span {
+color: blueviolet;
+   font-style: italic;
+ 
+      }
+      &__h2{
+        color:grey;
+        font-size: 2.5rem;
+      margin-bottom: .9rem;
+      }
+      
+      &__num{
+        font-weight: 500;
+        font-size: 1.5rem;
+      }
+      &__icon {
+        font-size: 3rem;
+        color: grey;
+        margin-right: .3rem;
+      }
+      &__ul{
+        list-style: none;
+        @media only screen and (max-width: 43.75em) {
+        
+          width: 100%;
+                 margin-top: 5rem;
+            }
+         
+      
+      }
+      &__li4 {
+        margin-bottom: 2rem;
+        text-transform: capitalize;
+        @media only screen and (max-width: 43.75em) {
+        
+          width: 70%;
+         
+         
+            }
+      }
+      &__li1{
+      margin-bottom: 2rem;
+      text-transform: capitalize;
+      &:hover {
+        color: red;
+        cursor: pointer;
+      }
+      }
+      &__li2{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        text-transform: capitalize;
+      font-weight: 600;
+      &:hover {
+        
+        cursor: pointer;
+      }
+      }
+      &__name{
+   text-align: center;
+   margin-top: 7rem;
+   text-transform:capitalize;
+   font-weight: 550;
+   @media only screen and (max-width: 56.25em) {
+            
+    margin-top: 4rem;
+           
+          }
+      }
+      &__ul1{
+        list-style: none;
+        text-align: center;
+        @media only screen and (max-width: 43.75em) {
+        
+          margin-top: 5rem;
+         
+         
+            }
+         
+      
+      }
+      
+      
+      &__li2-2{
+        display: flex;
+        @media only screen and (max-width: 43.75em) {
+        
+        align-items: center;
+        justify-content: center;
+                 
+            }
+         
+
+      
+      }
+      &__li3{
+      
+      }
+      &__ul3{
+        width: 20vw;
+        @media only screen and (max-width: 43.75em) {
+        
+          width: 100vw;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin-top: 5rem;
+                 
+            }
+         
+      
+      }
+      &__input{
+    height: 4rem;
+   border-top-left-radius: 10rem;
+   border-bottom-left-radius: 10rem;
+   padding: 2rem;
+    width: 70%;
+    border: none;
+    outline: 1px solid grey;
+    background-color: #000;
+    color: white;
+      
+      }
+      &__button{
+      border-top-right-radius: 10rem;
+      border-bottom-right-radius: 10rem;
+      font-size: 2rem;
+      font-family: serif;
+      text-transform: capitalize;
+      border: 1px solid grey;
+      background-color: #fff;
+     
+      &:hover {
+        background-color: #000;
+        cursor: pointer;
+        color: #fff;
+      }
+
+      
+      }
+      &__input-holder{
+        display: flex;
+        @media only screen and (max-width: 43.75em) {
+        
+          width: 70vw;
+          text-align: center;
+          margin-left: 8rem;
+                 
+            }
+      
+      }
+      &__{
+      
+      }
+      &__{
+      
+      }
+      &__{
+      
+      }
+      &__{
+      
+      }
+      &__{
+      
+      }
+      &__{
+      
+      }
+      &__{
+      
+      }
+      &__{
+      
+      }
+      &__{
+      
+      }
+      &__{
+      
+      }
+      &__{
+      
+      }
+      &__{
+      
+      }
+
+
+
+    }
+
+    .footer__button:hover  + .footer__input  {
+      background-color: #fff;
+      color: #000;
+    }
+
+
+    
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, rgba(128, 128, 128, 0.3), rgba(128, 128, 128, 0.716));
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all .2s;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.20);
+  }
+  
+}
+
+
+
+
+@media (max-width: 65em) {
+  .fifth {
+    padding: 10rem;
+  }
+  .fifth-main {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%), 
+    url('../public/web-car/IMG_3241.JPG');
+  }
+  .form {
+    width: 100%;
+    padding: 5rem;
+  }
+   
+  .form-radio1 {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .form-input1 {
+    width: 100%;
+  }
+
+  
+  
+}
